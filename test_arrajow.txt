@@ -1,0 +1,13 @@
+int arr[2][3];
+arr[0]<<;
+arr[1]<<;
+arr[2]<<;
+arr[3]<<;
+arr[4]<<;
+arr[5]<<;
+>>"arr="arr[0]"\n";
+>>"arr="arr[1]"\n";
+>>"arr="arr[2]"\n";
+>>"arr="arr[3]"\n";
+>>"arr="arr[4]"\n";
+>>"arr="arr[5]"\n";

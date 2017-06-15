@@ -1,0 +1,42 @@
+struct square
+{
+	int a;
+	int b;
+	int field;
+};
+struct cube
+{
+	struct square basic;
+	int height;
+	int field;
+	int volume;
+};
+int arg1;
+int arg2;
+int arg3;
+struct cube cube;
+fun create_cube;
+{
+	cube.basic.a=arg1;
+	cube.basic.b=arg2;
+	cube.basic.field=cube.basic.a*cube.basic.b;
+	cube.height=arg3;
+	cube.field=cube.basic.field*2 + cube.basic.a*cube.height*2 + cube.basic.b*cube.height*2;
+	cube.volume=cube.basic.field*cube.height;
+};
+fun print_cube;
+{
+	>>"Basic:\t"cube.basic.a"x"cube.basic.b"="cube.basic.field"\n";
+	>>"Cube:\tHeight="cube.height" Field="cube.field" Volume="cube.volume"\n\n";
+};
+
+arg1=5;
+arg2=8;
+arg3=3;
+fun create_cube;
+fun print_cube;
+arg1=2;
+arg2=7;
+arg3=4;
+fun create_cube;
+fun print_cube;

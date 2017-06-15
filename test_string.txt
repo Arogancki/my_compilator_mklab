@@ -1,0 +1,2 @@
+str name "Artur";
+>>"\nMy name is "name"\nHello Word\n";

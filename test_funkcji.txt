@@ -1,0 +1,45 @@
+int fib_arg1;
+int fib_arg2;
+
+fun fib2;
+{
+	int temp;
+	temp=fib_arg2;
+	fib_arg2=fib_arg2+fib_arg1;
+	fib_arg1=temp;
+};
+
+int arg1;
+
+fun fib;
+{
+	if arg1<2;
+	{
+		arg1=0;
+	};
+	else; 
+	{
+		if arg1?2;
+		{
+			arg1=1;
+		};
+		else;
+		{
+			fib_arg1=0;
+			fib_arg2=1;
+			
+			arg1=arg1 - 2;
+			while;
+			{
+				fun fib2;
+				arg1=arg1 - 1;
+			};
+			arg1=fib_arg2;
+		};
+	};
+};
+
+>>"\nPodaj numer liczby fib\n";
+arg1<<;
+fun fib;
+>>"\nWynik: "arg1;

@@ -1,0 +1,12 @@
+.data
+	.String0:	.asciiz	"\nPodaj numer liczby fib\n"
+	.String1:	.asciiz	"\nWynik: "
+	.iStack0:	.word	0
+	.iStack1:	.word	0
+	.iStack2:	.word	0
+	.iStack3:	.word	0
+	.iStack4:	.word	0
+	arg1:	.word	0
+	fib_arg1:	.word	0
+	fib_arg2:	.word	0
+	temp:	.word	0
